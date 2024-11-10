@@ -58,7 +58,7 @@ def web_portalfolio():
         st.write("Saravanampatti, Coimbatore")
         st.write("Phone: +91-123-456-7890")
         st.write("Email: info@kgisltech.ac.in")
-    elif sidebar_option == 'Guessing Game':
+    elif selected == 'Guessing Game':
     # Guessing Game section
         st.subheader("Number Guessing Game")
         st.write(
