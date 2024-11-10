@@ -4,8 +4,8 @@ import random
 
 def web_portalfolio():
     # Page configs
-    st.set_page_config(page_title="
-    ","Joshpin Kayalvizhi's Portfolio", page_icon="🌟")
+    st.set_page_config(page_title=""
+                       ,"Joshpin Kayalvizhi's Portfolio", page_icon="🌟")
 
     # Title with your name
     st.write(f"""
