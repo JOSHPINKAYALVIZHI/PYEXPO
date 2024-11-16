@@ -4,8 +4,17 @@ import random
 
 def web_portalfolio():
     # Page configs
-    st. markdown ( "\n\n")
     st.set_page_config(page_title="Joshpin Kayalvizhi's Portfolio", page_icon="🌟")
+    st.markdown("""
+        <style>
+        div.block-container {
+            padding-top: 2rem;
+            margin-top: 2rem;
+            margin-left: 3rem; /* Adjust as needed */
+            margin-right: 3rem; /* Adjust as needed */
+        }
+        </style>
+    """, unsafe_allow_html=True)
 
     # Title with your name
     st.write(f"""
