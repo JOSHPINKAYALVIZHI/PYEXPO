@@ -89,7 +89,7 @@ def web_portalfolio():
                 st.session_state.attempts = 0
 
             # Input for user's guess
-            guess = st.number_input("Enter your guess from 1 to 10:", step=1, min_value=1, max_value=10)
+            guessed_number = st.number_input("Enter your guess from 1 to 10:", step=1, min_value=1, max_value=10)
             if st.button("Check Guess"):
                 st.session_state.attempts += 1
                 if guessed_number < target_number:
