@@ -99,7 +99,7 @@ def web_portalfolio():
                 else:
                     st.success(f"Congratulations! You've guessed the number in {st.session_state.attempts} attempts.")
                     # Reset the game
-                    st.session_state.target_number = random.randint(1, 10)
+
                     st.session_state.attempts = 0
 
             st.write("___")
