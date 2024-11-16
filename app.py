@@ -83,6 +83,7 @@ def web_portalfolio():
             st.write("___")
 
             # Game setup
+            target_number=5
             if 'target_number' not in st.session_state:
                 st.session_state.target_number = random.randint(1, 10)
                 st.session_state.attempts = 0
