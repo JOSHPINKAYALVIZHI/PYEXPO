@@ -85,16 +85,16 @@ def web_portalfolio():
             # Game setup
             target_number=5
             if 'target_number' not in st.session_state:
-                st.session_state.target_number = random.randint(1, 10)
+
                 st.session_state.attempts = 0
 
             # Input for user's guess
             guess = st.number_input("Enter your guess from 1 to 10:", step=1, min_value=1, max_value=10)
             if st.button("Check Guess"):
                 st.session_state.attempts += 1
-                if guess < st.session_state.target_number:
+                if guessed_number < target_number:
                     st.warning("Try a higher number!")
-                elif guess > st.session_state.target_number:
+                elif guessed_number > target_number:
                     st.warning("Try a lower number!")
                 else:
                     st.success(f"Congratulations! You've guessed the number in {st.session_state.attempts} attempts.")
